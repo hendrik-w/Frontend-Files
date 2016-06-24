@@ -16,3 +16,6 @@ Bei dieses Repo handelt es sich um die blank Website. Die JavaScripts müssen er
 
 > - Cem Philipp Freimoser
 > - Dominik Jülg
+> - Jan Hendrik Winter
+> - Leon Gottschick
+> - Marc der Geile
