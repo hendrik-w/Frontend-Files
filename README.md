@@ -10,7 +10,11 @@ Hey! This is our awesome Website! It is sexy like hell! Fast like a fox!
 Informationen
 -------------
 
-Bei dieses Repo handelt es sich um die blank Website. Die JavaScripts müssen erst nacher reingemergt werden. 
+In diesem Repository werden alle Frontend-Daten abgelegt.
+Damit sich die beiden Untergruppen nicht unnötig behindern wird in zwei Branches entwickelt:
+- feature/desgin
+- feature/rendering
+Sobald das Design fertig wird, wird dieses in den Master gemerged, sodass das rendering-Team darauf zurückgreifen kann.
 
 > **Arbeiter:**
 
