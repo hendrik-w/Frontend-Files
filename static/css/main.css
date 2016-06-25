@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Roboto);
+
 /**
  * Used colors
  *
@@ -12,4 +14,16 @@
  *
  */
 
- 
+html, body {
+	background-color: #212121;
+	color: #FFFFFF;
+	font-family: "Roboto", Helvetica, sans-serif;
+	height: 100%;
+	width: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+	margin: 0;
+	padding: 0;
+	font-weight: 100;
+}
