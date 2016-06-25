@@ -17,7 +17,7 @@ h4 {
 }
 
 .left-area {
-	width: 100%;
+	width: 400px;
 	height: 100%;
 	float: left;
 }
@@ -36,11 +36,13 @@ h4 {
 }
 
 .left-bottom-area {
+	position: absolute;
+	height: 50px;
 	display: flex;
-    align-items: center;
-    justify-content: left;
-	margin-top: 90vh;
-	margin-left: 25px;
+	align-items: center;
+	justify-content: left;
+	bottom: 5px;
+	left: 85px;
 	font-size: 1.8em;
 }
 
@@ -58,4 +60,45 @@ h4 {
 	margin-left: 5px;
 	width: 120px;
 	line-height: 85%;
+}
+
+.mid-area {
+	height: 500px;
+	background-color: black;
+	float: left;
+	min-width: 600px;
+	margin: 100px 0;
+}
+
+.right-area {
+	width: 300px;
+	float: right;
+}
+
+.right-bottom-area {
+	position: absolute;
+	height: 250px;
+	width: 300px;
+	bottom: 0;
+}
+
+.right-bottom-area div {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	height: 50px;
+	bottom: 5px;
+}
+
+.right-bottom-area div img {
+	height: 40px;
+	width: 40px;
+	left: 5px;
+}
+
+.right-bottom-area canvas {
+	float: right;
+	height: 250px;
+	width: 250px;
+	background-color: black;
 }
