@@ -1,0 +1,61 @@
+/**
+ * Used colors
+ *
+ * primary dark:	#E64A19
+ * primary:			#FF5722
+ * primary light:	#FFCCBC
+ * text headline:	#FFFFFF
+ * text primary:	#212121
+ * text secondary:	#727272
+ * accent:			#FF9800
+ * divider: 		#B6B6B6
+ *
+ */
+
+h4 {
+	font-size: 0.7em;
+}
+
+.left-area {
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+ .navigation {
+	background-color: #FF5722;
+	height: 100%;
+	width: 70px;
+	float: left;
+}
+
+.left-top-area {
+	margin: 10px 25px;
+	float: left;
+	font-size: 1.8em;
+}
+
+.left-bottom-area {
+	display: flex;
+    align-items: center;
+    justify-content: left;
+	margin-top: 90vh;
+	margin-left: 25px;
+	font-size: 1.8em;
+}
+
+.left-bottom-area h2 {
+	float: left;
+}
+
+.left-bottom-area img {
+	float: left;
+	height: 40px;
+	width: 40px;
+	margin: 0 10px;
+}
+.left-bottom-area h4 {
+	margin-left: 5px;
+	width: 120px;
+	line-height: 85%;
+}
