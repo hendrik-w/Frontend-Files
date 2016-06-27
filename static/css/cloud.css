@@ -23,10 +23,20 @@ h4 {
 }
 
  .navigation {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
 	background-color: #FF5722;
 	height: 100%;
 	width: 70px;
 	float: left;
+}
+
+.navigation img {
+	margin-top: 10px;
+	width: 40px;
+	height: 40px;
 }
 
 .left-top-area {
