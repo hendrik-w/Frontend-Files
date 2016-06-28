@@ -58,9 +58,15 @@ h4 {
 }
 
 .navigation img {
-	margin-top: 35px;
+	margin-top: 25px;
 	width: 35px;
 	height: 35px;
+	padding: 5px 30%;
+}
+
+.navigation img:hover {
+	background-color: #FF9800;
+	cursor: pointer;
 }
 
 .left-top-area {
