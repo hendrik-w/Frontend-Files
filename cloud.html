@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="static/css/normalize.css" type="text/css">
 		<link rel="stylesheet" href="static/css/main.css" type="text/css">
 		<link rel="stylesheet" href="static/css/cloud.css" type="text/css">
+		<script type="text/javascript" src="static/js/Eventhandler.js"></script>
 	</head>
 	<body>
 		<div class="left-area">
@@ -25,14 +26,14 @@
 				<h4>MY AWESOME SLOGAN</h4>
 			</div>
 			<div class="left-bottom-area">
-				<img id="download-button" />
+				<a id="download-link"><img id="download-button" /></a>
 				<h2>445</h2>
 				<h4>HASHTAGS LAST 24H</h4>
 			</div>
 		</div>
 		<div class="right-area">
 			<div class="right-bottom-area">
-				<canvas>
+				<canvas id="canvas-timer">
 					
 				</canvas>
 				<div>
@@ -41,7 +42,7 @@
 			</div>
 		</div>
 		<div class="mid-area">
-			<canvas>
+			<canvas id="canvas-cloud">
 
 			</canvas>
 		</div>
