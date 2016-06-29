@@ -116,8 +116,6 @@ h4 {
 
 .mid-area canvas {
 	border-style: dotted;
-	height: 100%;
-	width: 100%;
 }
 
 .right-area {
@@ -130,7 +128,7 @@ h4 {
 	position: absolute;
 	height: 250px;
 	width: 300px;
-	bottom: 5px;
+	bottom: 0px;
 }
 
 .right-bottom-area div {
@@ -148,11 +146,12 @@ h4 {
 }
 
 .right-bottom-area canvas {
+	position: absolute;
 	border-top: dotted;
 	border-left: dotted;
 	float: right;
-	height: 250px;
-	width: 250px;
+	bottom: 0px;
+	right: 0px;
 }
 
 

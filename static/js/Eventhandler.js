@@ -1,4 +1,4 @@
-window.onload = function() {
+$(window).on('load', function() {
     var canvas = document.getElementById('canvas-cloud'),
         ctx = canvas.getContext('2d');
 
@@ -21,4 +21,4 @@ window.onload = function() {
     }, false);
 
     doSampleCanvas();
-}
+});
