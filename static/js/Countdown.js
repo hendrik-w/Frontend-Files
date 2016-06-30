@@ -1,6 +1,12 @@
 $(window).on('load', function() {
+    const DURATION = 10000,
+          STEPS = 157,
+          STEP_LENGTH = 0.01;
+
     var canvas = document.getElementById('canvas-timer'),
-        ctx = canvas.getContext('2d');
+        ctx = canvas.getContext('2d'),
+        timer = setInterval(drawAccentCircle, (DURATION / STEPS)),
+        step = 0;
 
     function drawWhiteCircle() {
         ctx.strokeStyle="#FFF";
@@ -10,25 +16,15 @@ $(window).on('load', function() {
         ctx.stroke();
     }
 
-    var myVar = setInterval(myTimer, 35);
-    var i = 0;
-    var end = 1.57079632679;
-    var duration = 60000;
-    var steps = 1570.7963;
-
-    function myTimer() {
+    function drawAccentCircle() {
         ctx.strokeStyle="#FF5722";
         ctx.lineWidth=7;
         ctx.beginPath();
-        ctx.arc(canvas.width,canvas.height,240,1*Math.PI + i ,1*Math.PI + i + 0.001);
+        ctx.arc(canvas.width,canvas.height,240,1*Math.PI + step ,1*Math.PI + step + STEP_LENGTH);
         ctx.stroke();
-        i += 0.001;
-
-        console.log(i);
-
-        if (i >= end) {
-            window.clearInterval(myVar);
-            return;
+        step += 0.01;
+        if (step >= (STEPS * STEP_LENGTH)) {
+            window.clearInterval(timer);
         }
     }
 
