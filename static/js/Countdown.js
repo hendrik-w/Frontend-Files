@@ -10,10 +10,11 @@ $(window).on('load', function() {
         ctx.stroke();
     }
 
-    var myVar = setInterval(myTimer, 10);
+    var myVar = setInterval(myTimer, 35);
     var i = 0;
     var end = 1.57079632679;
     var duration = 60000;
+    var steps = 1570.7963;
 
     function myTimer() {
         ctx.strokeStyle="#FF5722";
