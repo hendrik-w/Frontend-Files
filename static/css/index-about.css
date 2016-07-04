@@ -1,0 +1,33 @@
+.aboutdiv {
+  width: auto;
+  /*margin-top: 150vh;*/
+}
+.about-header {
+  background-color: #727272;
+  padding: 10px 0px;
+}
+.about-header h1 {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  width: 100%;
+}
+.team {
+  text-align: center;
+  background-color: #B6B6B6;
+}
+.team-member {
+  margin: 2%;
+  display: inline-block;
+}
+.team-member img {
+  width: 100px;
+}
+.disclaimer {
+  padding: 15px;
+  background-color: #444;
+}
+.disclaimer a {
+  color: #2196F3;
+  text-decoration: none;
+}
