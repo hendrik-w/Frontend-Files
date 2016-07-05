@@ -147,8 +147,6 @@ h4 {
 
 .right-bottom-area canvas {
 	position: absolute;
-	border-top: dotted;
-	border-left: dotted;
 	float: right;
 	bottom: 0px;
 	right: 0px;
