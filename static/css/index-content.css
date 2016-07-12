@@ -4,8 +4,13 @@
 }
 .contenchild {
   display: inline-block;
-  margin: 12% 9% 12% 9%;
+  margin: 12% 7% 12% 7%;
 }
+#contentchild-center {
+  height: 40vh !important;
+  width: 40vh !important;
+}
+
 .circleBase {
   border-radius: 50%;
   background-color: #FF5722;
@@ -16,9 +21,17 @@
   behavior: url(PIE.htc);
   /* remove if you don't care about IE8 */
 }
-.circleBase:hover {
+
+
+.contenchild:hover .circleBase,contenchild:hover .circleBase{
+  background-color: #FF9800;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
 }
+.contenchild:hover .buttonText,contenchild:hover .buttonText{
+  color: #FF9800;
+}
+
 .circleBase object {
   margin: auto;
 }
@@ -29,4 +42,15 @@
 #contenchild-center {
   height: 40vh !important;
   width: 40vh !important;
+  cursor:not-allowed;
+}
+
+
+
+.notready div {
+  background-color: #BDBDBD !important;
+}
+
+.notready p {
+  color: #BDBDBD;
 }
