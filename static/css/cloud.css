@@ -139,10 +139,11 @@ h4 {
 	bottom: 5px;
 }
 
-.right-bottom-area div img {
+.right-bottom-area img {
 	height: 40px;
 	width: 40px;
 	left: 5px;
+	float: right;
 }
 
 .right-bottom-area canvas {
