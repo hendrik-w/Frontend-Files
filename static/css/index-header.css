@@ -1,0 +1,38 @@
+#topdiv {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 25%;
+}
+.header {
+  text-align: center;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.titel {
+  padding: 20px 0px;
+  background-color: #FF5722;
+  font-family: 'Bangers', cursive;
+  font-size: 20pt;
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  /* padding-top: 20px; */
+  padding-bottom: 2;
+}
+.titel img {
+  height: 70px;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-right: 10px;
+}
+.titel h1 {
+  display: inline-block;
+  vertical-align: middle;
+}
+.sub-title {
+  background-color: #E64A19;
+  padding: 5px;
+  padding-top: 135px;
+}
