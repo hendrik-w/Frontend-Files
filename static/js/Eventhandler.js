@@ -30,5 +30,9 @@ $(window).on('load', function() {
         }
     }, false);
 
+    document.getElementById('home-link').addEventListener('click', function() {
+        window.location.href = "index.html";
+    }, false);
+
     doSampleCanvas();
 });

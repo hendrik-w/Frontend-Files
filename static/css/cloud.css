@@ -114,10 +114,6 @@ h4 {
 	min-width: 720px;
 }
 
-.mid-area canvas {
-	border-style: dotted;
-}
-
 .right-area {
 	width: 300px;
 	height: 100%;
@@ -153,13 +149,7 @@ h4 {
 	right: 0px;
 }
 
-
-@media only screen and (max-width: 1080px) and (max-height: 720px) {
-	.right-bottom-area {
-		visibility: hidden;
-	}
-
-	.left-bottom-area {
-		visibility: hidden;
-	}
+.deactivated {
+	background-color: #FF5722 !important;
+	cursor: default !important;
 }
