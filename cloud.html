@@ -17,6 +17,8 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 		<script type="text/javascript" src="static/js/Eventhandler.js"></script>
 		<script type="text/javascript" src="static/js/Countdown.js"></script>
+		<script type="text/javascript" src="static/js/svg.js"></script>
+		<script type="text/javascript" src="static/js/svg-pan-zoom.js"></script>
 	</head>
 	<body>
 		<div class="left-area">
@@ -39,7 +41,7 @@
 		<div class="right-area">
 			<div class="right-bottom-area">
 				<canvas id="canvas-timer" height="250px" width="250px">
-					
+
 				</canvas>
 				<div>
 					<a id="pause-link"><img id="pause-button" /></a>
@@ -47,9 +49,23 @@
 			</div>
 		</div>
 		<div class="mid-area">
-			<canvas id="canvas-cloud">
 
-			</canvas>
+		<div id="canvas">
+
+		</div>
+		<div class="controls">
+		<a id="zoom-in">Zoom in &middot;</a>
+		<a id="zoom-out">Zoom out &middot;</a>
+		<a id="reset">Reset</a>
+	</div>
+			<div class="elementsContainer">
+				<ul id="cloudElements">
+
+				</ul>
+			</div>
+			<script type="text/javascript" src="static/js/TransformScript.js"></script>
+			<script type="text/javascript" src="static/js/tagcloud.js"></script>
+			<script type="text/javascript" src="static/js/canvasZooming.js"></script>
 		</div>
 	</body>
 </html>

@@ -1,0 +1,199 @@
+/**
+ * Used colors
+ *
+ * primary dark:	#E64A19
+ * primary:			#FF5722
+ * primary light:	#FFCCBC
+ * text headline:	#FFFFFF
+ * text primary:	#212121
+ * text secondary:	#727272
+ * accent:			#FF9800
+ * divider: 		#B6B6B6
+ *
+ */
+
+h4 {
+	font-size: 0.7em;
+}
+
+#pause-button {
+	background-image: url("../res/img/pause.png");
+	background-size: 100%;
+	cursor: pointer;
+}
+
+#pause-button:hover {
+	background-image: url("../res/img/pause_hover.png");
+	background-size: 100%;
+	cursor: pointer;
+}
+
+#download-button {
+	background-image: url("../res/img/download.png");
+	background-size: 100%;
+	cursor: pointer;
+}
+
+#download-button:hover {
+	background-image: url("../res/img/download_hover.png");
+	background-size: 100%;
+	cursor: pointer;
+}
+
+#zoom-in{
+	font-weight: bold;
+	font-size: 14pt;
+}
+
+#zoom-out{
+	font-weight: bold;
+	font-size: 14pt;
+}
+
+#reset{
+	font-weight: bold;
+	font-size: 14pt;
+}
+
+#zoom-in:hover{
+	color: #FF5722;
+	cursor: pointer;
+}
+
+#zoom-out:hover{
+	color: #FF5722;
+	cursor: pointer;
+}
+
+#reset:hover{
+	color: #FF5722;
+	cursor: pointer;
+}
+
+.left-area {
+	width: 400px;
+	height: 100%;
+	float: left;
+}
+
+ .navigation {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	background-color: #FF5722;
+	height: 100%;
+	width: 70px;
+	float: left;
+}
+
+.navigation img {
+	margin-top: 20px;
+	width: 35px;
+	height: 35px;
+	padding: 10px 25%;
+}
+
+.navigation img:hover {
+	background-color: #FF9800;
+	cursor: pointer;
+}
+
+.left-top-area {
+	margin: 10px 25px;
+	float: left;
+	font-size: 1.8em;
+}
+
+.left-bottom-area {
+	position: absolute;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	bottom: 5px;
+	left: 85px;
+	font-size: 1.8em;
+}
+
+.left-bottom-area h2 {
+	float: left;
+}
+
+.left-bottom-area img {
+	float: left;
+	height: 40px;
+	width: 40px;
+	margin: 0 10px;
+}
+
+.left-bottom-area h4 {
+	margin-left: 5px;
+	width: 120px;
+	line-height: 85%;
+}
+
+.mid-area {
+	position: absolute;
+	top: 120px;
+	left: 10vw;
+	height: 70vh;
+	width: 65vw;
+	float: left;
+	min-height: 400px;
+	min-width: 720px;
+}
+
+.mid-area canvas {
+	border-style: dotted;
+}
+
+.right-area {
+	width: 300px;
+	height: 100%;
+	float: right;
+}
+
+.right-bottom-area {
+	position: absolute;
+	height: 250px;
+	width: 300px;
+	bottom: 0px;
+}
+
+.right-bottom-area div {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	height: 50px;
+	bottom: 5px;
+}
+
+.right-bottom-area img {
+	height: 40px;
+	width: 40px;
+	left: 5px;
+	float: right;
+}
+
+.right-bottom-area canvas {
+	position: absolute;
+	float: right;
+	bottom: 0px;
+	right: 0px;
+}
+
+.elementsContainer {
+	display: none;
+	visibility: hidden;
+}
+
+@media only screen and (max-width: 1080px) and (max-height: 720px) {
+	.right-bottom-area {
+		visibility: hidden;
+	}
+
+	.left-bottom-area {
+		visibility: hidden;
+	}
+}
