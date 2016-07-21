@@ -161,6 +161,5 @@ h4 {
 }
 
 .deactivated {
-	background-color: #FF5722 !important;
-	cursor: default !important;
+	display: none;
 }
