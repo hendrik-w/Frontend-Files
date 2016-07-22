@@ -1,3 +1,7 @@
+// Ideas and code snippets from:
+// http://www.iscavision.com/svg-tag-cloud/
+// http://aventures-logicielles.blogspot.de/2010/11/wordle-like-php-script.html
+
 var tagcloud = function (){
   // Create a new SVG element inside the div#canvas
   var draw = SVG('canvas').size(window.innerWidth * 0.8, window.innerHeight * 0.8);
@@ -70,18 +74,16 @@ var tagcloud = function (){
    a = [];
    b = [];
 
-// TODO: array cleanen wenn Funktion aufgerufen wird - jhw
-//		loop creates an array of the li html object's
+
 var highestAmount;
 var temp = element[0].innerHTML;
 var c = temp.split(',');
 highestAmount = c[1];
-
+//		loop creates an array of the li html object's
   for(var i = 0; i < element.length; i++){
     var wordColor = randomColorChoser();
     a.push( element[i].innerHTML );
     b = a[i].split(',');
-    console.log("b1: " + b[1] + " |" + calculateWordSize(b[1], highestAmount));
     baseWords.push({
     word: b[0], // name
     size: calculateWordSize(b[1], highestAmount), // counts
@@ -106,7 +108,7 @@ highestAmount = c[1];
   }
 
   var drawnBoxes = [];
-  setTimeout( addWord, 10);
+  setTimeout( addWord() , 10);
 
   function placeWord(word) {
     // get dimensions of current word

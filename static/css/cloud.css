@@ -99,10 +99,10 @@ h4 {
 	float: left;
 	margin: 0 10px;
 	display:block;
-    width:0px;
-    height:0px;
-    outline:none;
-    padding:20px 20px;
+	width:0px;
+	height:0px;
+	outline:none;
+	padding:20px 20px;
 }
 
 .left-bottom-area h4 {
@@ -147,10 +147,10 @@ h4 {
 	left: 5px;
 	float: right;
 	display:block;
-    width:0px;
-    height:0px;
-    outline:none;
-    padding:20px 20px;
+	width:0px;
+	height:0px;
+	outline:none;
+	padding:20px 20px;
 }
 
 .right-bottom-area canvas {
@@ -159,6 +159,12 @@ h4 {
 	bottom: 0px;
 	right: 0px;
 }
+
+.elementsContainer {
+	display: none;
+	visibility: hidden;
+}
+
 
 .deactivated {
 	display: none;

@@ -1,14 +1,15 @@
 $(window).on('load', function() {
 
-	// try if working
-    function downloadCanvas(link, canvasId, filename) {
+
+// change this to an svg download
+/*   function downloadCanvas(link, canvasId, filename) {
         link.href = document.getElementById(canvasId).toDataURL();
         link.download = filename;
     }
-    document.getElementById('download-link').addEventListener('click', function() {
-        downloadCanvas(this, 'canvas-cloud', 'Tagcloud.png');
-    }, false);
 
+    document.getElementById('download-link').addEventListener('click', function() {
+        downloadCanvas(this, 'canvas-cloud', 'Tagcloud.svg');
+    }, false);*/
 
     document.getElementById('pause-link').addEventListener('click', function() {
         if (paused == true) {

@@ -4,7 +4,7 @@
 body{
   background-color: #FF5722 !important;
   height: 100%;
-  overflow-y: hidden;
+  overflow:hidden;
 }
 
 p {
@@ -48,7 +48,7 @@ footer {
   width: 80vh;
   margin: 20px;
   display: inline-block;
-  position: fixed;
+
 }
 
 .footer {

@@ -1,3 +1,4 @@
+var canvasZooming = function (callback){
 var element;
 var canvasElements = document.getElementById('canvas').children;
 for (var i = 0; i < canvasElements.length; i++){
@@ -23,3 +24,6 @@ var panZoom = svgPanZoom(element, {
          ev.preventDefault()
          panZoom.resetZoom()
        });
+
+       callback.apply(this,[]);
+}

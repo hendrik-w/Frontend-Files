@@ -4,25 +4,11 @@ $(window).on('load', function() {
           STEP_LENGTH = 0.01;
 
     var canvas = document.getElementById('canvas-timer'),
-        canvas2 = document.getElementById('canvas-cloud'),
         ctx = canvas.getContext('2d'),
-        ctx2 = canvas2.getContext('2d'),
         timer1 = setInterval(drawAccentCircle, (DURATION / STEPS)),
         timer2 = setInterval(drawNumber, 1000),
         step = 0,
         second = DURATION / 1000;
-
-    ctx2.canvas.width  = window.innerWidth *0.7;
-    ctx2.canvas.height = window.innerHeight *0.7;
-
-    function doSampleCanvas() {
-        /* draw something */
-        ctx2.fillStyle = '#FF5722';
-        ctx2.font = '20px sans-serif';
-        ctx2.fillText('Sample Tagcloud', 10, canvas2.height / 2 - 15);
-        ctx2.font = '16px sans-serif';
-        ctx2.fillText('Click link below to save this as image', 15, canvas2.height / 2 + 35);
-    }
 
     function reloadTimer() {
         delAccentCircle();
@@ -30,7 +16,8 @@ $(window).on('load', function() {
         window.clearInterval(timer2);
 
         // display new Tagcloud
-
+        document.location.reload();
+        
         timer1 = setInterval(drawAccentCircle, (DURATION / STEPS));
         timer2 = setInterval(drawNumber, 1000);
         step = 0;
@@ -64,7 +51,7 @@ $(window).on('load', function() {
             ctx.stroke();
             step += 0.01;
         }
-        if (step >= (STEPS * STEP_LENGTH)) {           
+        if (step >= (STEPS * STEP_LENGTH)) {
             reloadTimer();
         }
     }
