@@ -23,3 +23,5 @@ Sobald das Design fertig wird, wird dieses in den Master gemerged, sodass das re
 > - Jan Hendrik Winter
 > - Leon Gottschick
 > - Marc der Geile
+
+Wichtig: Wenn man das Backend Lokal gebaut hat, muss unter 'static/js' im Skript TransformScript.js in Zeile 46 der Link angepasst werden!
